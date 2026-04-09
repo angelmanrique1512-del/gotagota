@@ -29,3 +29,34 @@ public class ClienteController {
     public List<Cliente> listar() {return clienteService.listarTodos();}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
