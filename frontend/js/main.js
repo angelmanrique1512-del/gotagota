@@ -18,6 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
                             <td>${cliente.dni}</td>
                             <td>${cliente.telefono}</td>
                             <td>${cliente.direccion}</td>
+
+                            <td>
+                               <button class="btn btn-outline-primary me-2">
+                                 <i class="fas fa-edit"></i> Editar
+                               </button>
+                               <button class="btn btn-outline-danger">
+                                 <i class="fas fa-trash"></i> Eliminar
+                                </button>
+                            </td>
                             </tr> 
                             `
                    elemento.innerHTML += fila
