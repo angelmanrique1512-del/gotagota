@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(data => {
             //console.log('Datos:', data);
-            const elemento = document.getElementById("table-cliente")
+            const elemento = document.getElementById("table-clientes")
             
             for (let i = 0; i < data.length; i++) {
                 
