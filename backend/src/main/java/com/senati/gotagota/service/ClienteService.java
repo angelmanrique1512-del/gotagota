@@ -19,7 +19,7 @@ public class ClienteService {
     public List<Cliente> listarTodos(){
         return clienteRepository.findAll();
     }
-    public Cliente cearCLiente(Cliente cliente){
+    public Cliente crearCliente(Cliente cliente){
         return clienteRepository.save(cliente);
     }
 
