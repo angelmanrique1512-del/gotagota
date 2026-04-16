@@ -26,8 +26,8 @@ public class ClienteController {
     @GetMapping
     public List<Cliente> listar() {return clienteService.listarTodos();}
     @PostMapping
-    public ResponseEntity<Cliente> crear(@RequestBoby Cliente cliente){
-        return ResponseEntity.ok(cienteService.crearCliente(cliente));
+    public ResponseEntity<Cliente> crear(@RequestBody Cliente cliente){
+        return ResponseEntity.ok(clienteService.crearCliente(cliente));
     }
     //delete /api/cliente/{id} =>eliminar
     @DeleteMapping("/{id}")
