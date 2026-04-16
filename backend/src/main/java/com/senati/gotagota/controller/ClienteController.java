@@ -25,6 +25,10 @@ public class ClienteController {
     //GET /api/clientes -> devuelve todos los clientes en formato JSON
     @GetMapping
     public List<Cliente> listar() {return clienteService.listarTodos();}
+    @PostMapping
+    public ResponseEntity<Cliente> crear(@RequestBoby Cliente cliente){
+        return ResponseEntity.ok(cienteService.crearCliente(cliente));
+    }
     //delete /api/cliente/{id} =>eliminar
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> eliminar(@PathVariable Long id){
